@@ -1,0 +1,234 @@
+
+body{
+    background: rgb(0, 123, 200);
+}
+
+.start{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+.start button{
+    border-radius: 5px;
+    padding:5px 10px;
+    font-size:25px;
+    font-weight: 500;
+    background-color: white;
+    color:royalblue;
+    text-shadow:green;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.start button:hover{
+    color: white;
+    background-color: rgb(0, 187, 118);
+}
+
+.dis{
+    display:none;
+}
+
+.info{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background-color: white;
+    border-radius:5px;
+    font-size:20px;
+}
+
+.info .instpage{
+    padding: 15px 80px;
+    font-size: 150%;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+}
+
+.info .inst1{
+    background-color: rgb(255, 255, 255);
+    padding:10px 20px;
+}
+
+.info .inst1 .instbrief span{
+    font-weight: 700;
+    color:crimson;
+}
+
+
+.info .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:20px 15px;
+}
+
+.info .buttons button{
+    padding:7px 18px;
+    margin:0 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 550;
+    cursor:pointer;
+    color:white;
+    transition:all 0.3s ease;
+}
+
+.buttons button.exit{
+    color:rgb(50, 159, 226);
+    border-color: rgb(50, 159, 226);
+}
+
+.buttons button.exit:hover{
+    color: white;
+    background-color: rgb(50, 159, 226);
+}
+
+.buttons button.continue{
+    color:rgb(255, 255, 255);
+    border-color: rgb(50, 159, 226);
+    background-color: rgb(50, 159, 226);
+}
+
+.buttons button.continue:hover{
+    background: rgb(0, 114, 184);
+}
+
+.question_main{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background: white;
+    border-radius: 5px;
+    padding:10px 20px;
+    height: 300px;
+    width:500px;
+    padding-bottom: 15%;
+}
+
+.question_main .header{
+    display:flex;
+    border-bottom: 1px solid grey;
+}
+
+.question_main .header p.subj_name{
+    margin-right: 100px;
+    font-size:25px;
+    font-weight: 600;
+    margin-top:2px;
+}
+
+.question_main .header p.timer1{
+    background-color: aqua;
+    padding: 3px 4px;
+    border-radius: 3px;
+}
+
+.question_main .header .flex_end{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.question_main .header button{
+    padding:3px 10px;
+    margin-left:10px;
+    background: rgb(0, 114, 184);
+    border-color: rgb(0, 114, 184);
+    border-radius:5px;
+    color: white;
+}
+
+.question_main .header button:hover{
+    background-color: green;
+    border-color: green;
+    cursor: pointer;
+}
+
+.question_main .quest1 .question{
+    padding:0 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.question_main .quest1 ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.question_main .quest1 ul li input{
+    margin:10px 0;
+    cursor: pointer;
+}
+
+.question_main .quest1 .buttonss{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.question_main .quest1 .buttonss button{
+    padding:5px 15px;
+    margin:0 7px;
+    font-size: 14px;
+    font-weight: 540;
+    cursor: pointer;
+}
+
+.question_main .quest1 .buttonss button.reset_ans{
+    color:rgb(0, 77, 125);
+    border-color: rgb(171, 174, 177);
+    border-radius: 5px;
+}
+
+.question_main .quest1 .buttonss button.reset_ans:hover{
+    background-color: rgb(0, 114, 184);
+    color: white;
+    border-color: rgb(0, 114, 184);
+}
+
+.question_main .quest1 .buttonss button.submit_ans{
+    color:white;
+    background-color: rgb(0, 114, 184);
+    border-color: rgb(0, 114, 184);
+    border-radius: 5px;
+}
+
+.question_main .quest1 .buttonss button.submit_ans:hover{
+    background-color: rgb(0, 73, 118);
+    border-color: rgb(0, 73, 118);
+}
+
+.result{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height:200px;
+    width:400px;
+    background: white;
+    border-radius: 5px;
+}
+
+.result p#up{
+    font-size: 18px;
+    font-weight: bold;
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.result p{
+    font-size: 18px;
+    font-weight: bold;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}

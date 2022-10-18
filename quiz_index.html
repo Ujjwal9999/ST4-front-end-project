@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMapit</title>
+    <link href="quiz.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- start quiz button -->
+    <div id="start1" class="start">
+        <button onclick="star()">Start Quiz</button>
+    </div>
+    <div id="info1" class="info dis">
+        <div class="instpage">
+            <span>Some Rules of Quiz</span>
+        </div>
+        <div class="inst1">
+            <div class="instbrief">1. You have <span>15 seconds</span> for each question.</div>
+            <div class="instbrief">2. Each Question is of <span>1 mark</span>.</div>
+            <div class="instbrief">3. You can not edit your answer once selected.</div>
+        </div>
+        <div class="buttons">
+            <button id="exit1" class="exit" onclick="exit2()">Exit Quiz</button>
+            <button id="continue1" class="continue" onclick="con1()">Continue</button>
+        </div>
+    </div>
+
+    <div id="ques_block" class="question_main dis">
+        <div class="header">
+            <p class="subj_name">Front End ST-4</p>
+            <div class="flex_end">
+            <p class="timer1">Time Left : <span id="tim"></span></p>
+            <p><button id="subt" class="submit_top" id="sub_main">Submit Test</button></p>
+            </div>
+        </div>
+        <div class="quest1">
+            <h2 class="question">Question here</h2>
+            <ul class="ques_option">
+                <li>
+                    <input type="radio" name="answer" id="ans1" class="answer">
+                    <label for="ans1" id="option1">Answer option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans2" class="answer">
+                    <label for="ans2" id="option2">Answer option</label>
+                </li>
+                <li>
+                    <input type="radio" id="ans3" name="answer" class="answer">
+                    <label for="ans3" id="option3">Answer option</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="ans4" class="answer">
+                    <label for="ans4" id="option4">Answer option</label>
+                </li>
+            </ul>
+            <div class="buttonss">
+                <button id="prev_q" class="reset_ans">Prev. Question</button>
+                <button id="sub_q" class="submit_ans">Next Question</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="res_f" class="result dis">
+        <p id="up">Marks scored in quiz</p>
+        <p id="res1" class="res11">0, Time Over</p>
+    </div>
+    <!-- <script src="timer.js"></script> -->
+    <script src="quiz.js"></script>
+</body>
+
+</html>
